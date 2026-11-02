@@ -80,10 +80,10 @@ Projeto do professor utilizado como referência para o desenvolvimento do códig
 *Projeto educacional desenvolvido para praticar Java, interfaces gráficas, hashing, organização de código e requisições HTTP.*
 #### let's go gambling!
 
-<img src="image-1.png" alt="apostas são monocromáticas" width="120" height="80" />
+<img src="resources/images/image-1.png" alt="apostas são monocromáticas" width="120" height="80" />
 
-<img src="image-2.png" alt="benda" width="120" height="80" />
+<img src="resources/images/image-2.png" alt="benda" width="120" height="80" />
 
-<img src="image-3.png" alt="lets go gambling" width="120" height="80" />
+<img src="resources/images/image-3.png" alt="lets go gambling" width="120" height="80" />
 
 ⬆️"Oh dang it!"⬆️
