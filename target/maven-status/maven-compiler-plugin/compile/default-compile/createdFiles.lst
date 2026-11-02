@@ -1,1 +1,5 @@
+br\edu\Swing\TelaPrincipal.class
+br\edu\uiux\TelaPrincipal.class
 br\edu\principal\Principal.class
+br\edu\api\PwnedPasswords.class
+br\edu\Hash\HashUtil.class

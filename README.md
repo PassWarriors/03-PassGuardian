@@ -6,19 +6,18 @@ O PassGuardian é um projeto desenvolvido em Java com Swing que permite consulta
 
 ## ✨ Funcionalidades
 
-- Interface gráfica simples para inserir uma senha.
+- Interface gráfica para inserir uma senha.
 - Cálculo local do hash SHA-1.
 - Consulta à API Pwned Passwords.
 - Comparação local dos hashes retornados pela API.
 - Exibição da quantidade de ocorrências encontradas.
 
-
-## 📋 Versão atual: V0.1.0
+## 📋 Versão atual: v0.2.0
 
 | Versão | Alterações |
-|:---:|:---:|
-| `v0.1.0` | Criação da interface gráfica e campo de senha. Implementação do cálculo SHA-1 e integração com a API Pwned Passwords. Todo o programa fica dentro da classe Principal |
-
+|:---:|---|
+| `v0.1.0` | Criação da interface gráfica, campo de senha, cálculo SHA-1 e integração com a API. Todo o programa concentrado na classe `Principal`. |
+| `v0.2.0` | Refatoração do código e separação das responsabilidades em classes e pacotes diferentes: interface, cálculo SHA-1, consulta à API e inicialização do programa. |
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -27,12 +26,23 @@ O PassGuardian é um projeto desenvolvido em Java com Swing que permite consulta
 - **Java HTTP Client** — comunicação com a API.
 - **Have I Been Pwned API** — consulta à base de senhas expostas.
 
+## 🏗️ Estrutura do projeto
+
+O código foi dividido em quatro partes principais:
+
+| Classe | Responsabilidade |
+|---|---|
+| `Principal` | Inicialização do programa. |
+| `TelaPrincipal` | Criação e gerenciamento da interface gráfica. |
+| `HashUtil` | Cálculo e conversão do hash SHA-1. |
+| `PwnedPasswords` | Comunicação com a API e verificação das ocorrências. |
+
 ## ⚙️ Como funciona?
 
 1. O usuário digita uma senha na interface.
 2. O programa calcula seu hash SHA-1 localmente.
 3. Os cinco primeiros caracteres do hash são enviados à API.
-4. A API retorna os sufixos correspondentes àquele prefixo.
+4. A API retorna os sufixos correspondentes àquele prefixo e suas respectivas contagens.
 5. O PassGuardian compara os resultados localmente e exibe a quantidade de ocorrências, quando encontrada.
 
 Esse método segue o modelo de consulta por intervalo (*range query*) da API Pwned Passwords, evitando enviar a senha original ou o hash completo.
@@ -54,14 +64,26 @@ Esse método segue o modelo de consulta por intervalo (*range query*) da API Pwn
 - A consulta depende da disponibilidade da API e de uma conexão com a internet.
 - Por segurança, prefira testar com senhas fictícias e não reutilize senhas pessoais em demonstrações.
 
+
 ## 📚 Créditos
-Materiais usados para desenvolver esse projeto
+
+Materiais e projetos utilizados como referência durante o desenvolvimento:
 
 - [Have I Been Pwned](https://haveibeenpwned.com/)
 - [Pwned Passwords API](https://haveibeenpwned.com/API/v3#PwnedPasswords)
-- [Projeto do RogerSarmento](https://github.com/rogermsarmento/verificador-senhas-vazadas)
-- ⬆_ (Projeto do professor usado para fazer o código) _⬆
+- [Projeto do Roger Sarmento](https://github.com/rogermsarmento/verificador-senhas-vazadas)
+
+Projeto do professor utilizado como referência para o desenvolvimento do código.
 
 ---
 
-*Projeto educacional desenvolvido para praticar Java, interfaces gráficas, hashing e requisições HTTP.*
+*Projeto educacional desenvolvido para praticar Java, interfaces gráficas, hashing, organização de código e requisições HTTP.*
+#### let's go gambling!
+
+<img src="image-1.png" alt="apostas são monocromáticas" width="120" height="80" />
+
+<img src="image-2.png" alt="benda" width="120" height="80" />
+
+<img src="image-3.png" alt="lets go gambling" width="120" height="80" />
+
+⬆️"Oh dang it!"⬆️
