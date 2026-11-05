@@ -12,7 +12,7 @@ src/
         │   └── Principal.java
         │
         ├── Swing/
-        │   └── TelaPrincipal.java
+        │   └── TelaGuardian.java
         │
         ├── Hash/
         │   └── HashUtil.java
@@ -28,7 +28,7 @@ O projeto utiliza uma estrutura dividida em classes com responsabilidades espec�
 | Pacote | Classe | Responsabilidade |
 |---|---|---|
 | `principal` | `Principal` | Inicialização do programa. |
-| `Swing` | `TelaPrincipal` | Interface gráfica utilizando Java Swing. |
+| `Swing` | `TelaGuardian` | Interface gráfica utilizando Java Swing por meio de um JFrame. |
 | `Hash` | `HashUtil` | Cálculo do hash SHA-1. |
 | `API` | `PwnedPasswords` | Comunicação com a API Have I Been Pwned e consulta de ocorrências. |
 
@@ -37,7 +37,7 @@ O projeto utiliza uma estrutura dividida em classes com responsabilidades espec�
 O fluxo de execução do programa é:
 
 1. `Principal` inicia a aplicação.
-2. `TelaPrincipal` cria a interface gráfica.
+2. `TelaGuardian` cria a interface gráfica.
 3. `HashUtil` calcula o hash SHA-1 da senha informada.
 4. `PwnedPasswords` consulta a API utilizando o sistema de *range query*.
 5. O resultado retorna à interface e é apresentado ao usuário.

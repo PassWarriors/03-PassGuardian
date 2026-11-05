@@ -12,12 +12,14 @@ O PassGuardian é um projeto desenvolvido em Java com Swing que permite consulta
 - Comparação local dos hashes retornados pela API.
 - Exibição da quantidade de ocorrências encontradas.
 
-## 📋 Versão atual: v0.2.0
+## 📋 Versão atual: v0.3.0
 
 | Versão | Alterações |
 |:---:|---|
 | `v0.1.0` | Criação da interface gráfica, campo de senha, cálculo SHA-1 e integração com a API. Todo o programa concentrado na classe `Principal`. |
 | `v0.2.0` | Refatoração do código e separação das responsabilidades em classes e pacotes diferentes: interface, cálculo SHA-1, consulta à API e inicialização do programa. |
+| `v0.2.1` | Organização de arquivos e READMEs do projeto |
+| `v0.3.0` | Trocado a classe `TelaPrincipal` por um `JFrame TelaGuardian` para facilitar vizualização da tela e organizado estrutura interna, pois era muito ruim ter que escrever e adivinhar oque ia aparecer na tela. |
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -33,7 +35,7 @@ O código foi dividido em quatro partes principais:
 | Classe | Responsabilidade |
 |---|---|
 | `Principal` | Inicialização do programa. |
-| `TelaPrincipal` | Criação e gerenciamento da interface gráfica. |
+| `TelaGuardian` | Criação e gerenciamento da interface gráfica com JFrame. |
 | `HashUtil` | Cálculo e conversão do hash SHA-1. |
 | `PwnedPasswords` | Comunicação com a API e verificação das ocorrências. |
 
@@ -49,10 +51,10 @@ Esse método segue o modelo de consulta por intervalo (*range query*) da API Pwn
 
 ## ▶️ Como executar
 
-1. Instale um JDK compatível com o projeto.
+1. Instale um JDK compatível com o projeto -> `Java 17` 
 2. Abra o projeto em uma IDE Java, como o NetBeans.
 3. Execute a classe `Principal`.
-4. Digite uma senha de teste e clique em **Verificar**.
+4. Digite uma senha de teste e clique no botão **Verificar** e aguarde a resposta.
 
 É necessária uma conexão com a internet para consultar a API.
 
@@ -76,8 +78,6 @@ Materiais e projetos utilizados como referência durante o desenvolvimento:
 Projeto do professor utilizado como referência para o desenvolvimento do código.
 
 ---
-
-*Projeto educacional desenvolvido para praticar Java, interfaces gráficas, hashing, organização de código e requisições HTTP.*
 #### let's go gambling!
 
 <img src="resources/images/image-1.png" alt="apostas são monocromáticas" width="120" height="80" />
